@@ -141,14 +141,19 @@
     animation-name: slidein;
   }
   @keyframes slidein {
-    from {
-      margin-left: 10%;
-      width: 10%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+    0%   {left: 10%;}
+    50%  {left: 90%;}
+    100% {left: 10%;}
   }
 
+  .ex-13-top-white, .ex-13-bottom-white{
+    animation-iteration-count: infinite;
+    animation-name: turnaround;
+    animation-duration: 3s;
+  }
+@keyframes turnaround {
+    0% {left: 10%;}
+    25% {}
+    50% {}
+    100% {}
+}
